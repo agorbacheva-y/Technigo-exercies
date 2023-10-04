@@ -172,6 +172,16 @@ howOldAreYouWithValidation();
 
 /*
   6) **BONUS**
-  Make the calculation machine we just made show random calculations everytime you invoke the function.
-  But hey, maybe limit the randomness to be numbers between 0-10?
+  Make the calculation machine we just made show random calculations everytime you 
+  invoke the function. But hey, maybe limit the randomness to be numbers between 0-10?
   */
+
+  const calculationRandom = () => {
+    let numberOne = Math.floor(Math.random() * 10);
+    let numberTwo = Math.floor(Math.random() * 10);
+    let sum = numberOne + numberTwo;
+
+    console.log(sum);
+  }
+
+  calculationRandom();
